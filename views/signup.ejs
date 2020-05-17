@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+
+  <div class="form">
+    <form action="/register" method="POST" class="form-signin" pb-autologin="true" autocomplete="off">
+      <img class="mb-4" src="" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+
+     <input type="text" name="firstname" id="inputEmail" class="form-control" placeholder="First Name" >
+     <input type="text" name="lastname" id="inputEmail" class="form-control" placeholder="Last Name">
+      <input type="email" name="username" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" pb-role="username">
+
+      <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required="" pb-role="password">
+       <p><strong>Already Registered.</strong>&nbsp<a href="/">Login</a></p>
+       <hr class="my-4">
+      <p id="signup">By clicking on <strong>Signup</strong> you agree to our<a href="#"> <strong>Terms and Conditions</strong></a></p>
+      <p><strong>Yes,I Agree</strong>&nbsp<label class="checkbox"><input type="checkbox" name="checkbox"></label></p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" pb-role="submit">Sign up</button>
+      <p class="mt-5 mb-3 text-muted">©vjainlion</p>
+    <passwordboxicon pb-icon="username" icon-type="main" style="display: none; position: absolute;"></passwordboxicon>
+
+  </form>
+  </div>
+
+
+<%- include("partials/footer") -%>

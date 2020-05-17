@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+
+  <div class="form">
+    <% if(success!=''){%>
+    <div class="alert alert-danger" role="alert">
+      <strong>Fail! </strong><%=success%>
+    </div>
+    <% } %>
+    <form action="/" method="POST" class="form-signin" pb-autologin="true" autocomplete="off">
+      <img class="mb-4" src="" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+      <input name="username" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" pb-role="username">
+
+      <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required="" pb-role="password">
+       <p><strong>Do not have account yet? </strong>&nbsp<a href="/register">Register</a></p>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit" pb-role="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">©vjainlion</p>
+    <passwordboxicon pb-icon="username" icon-type="main" style="display: none; position: absolute;"></passwordboxicon></form>
+  </div>
+
+
+<%- include("partials/footer") -%>
